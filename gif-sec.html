@@ -82,15 +82,45 @@
             width: 80%;
         }
         .lower-part button {
-        padding: 1% 2%;
-        /* border-radius: 10px; */
-        background-color: #060606;
-        border: 1px solid white;
-        color: white;
-        font-size: 14px;
-        font-weight: 600;
-        font-family: montserrat;
+            padding: 1% 2%;
+            /* border-radius: 10px; */
+            background-color: #060606;
+            border: 1px solid white;
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            font-family: montserrat;
         }
+
+        @media screen and (max-width: 768px) {
+            .con{
+                flex-direction: column;
+            }
+            .upper-part .img-left{
+                margin-left: 4%;
+                margin-right: 2%;
+            }
+            .upper-part .img-right{
+                margin-right: 4%;
+                margin-left: 2%;
+            }
+            .lower-part{
+                margin-left: 4%;
+            }
+            .lower-part h2 {
+                color: white;
+                font-size: 25px;
+                font-weight: 800;
+            }
+            .lower-part p {
+                color: white;
+                font-size: 12.5;
+                font-weight: 500;
+                width: 85%;
+            }
+            
+        }
+
     </style>
 </head>
 <body>
