@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        body{
+            background-color: #060606;
+        }
         .main-con{
             height: 10vh;
             width: 100vw;
@@ -27,6 +30,18 @@
             width: 100%;
             margin-bottom: 3%;
         }
+
+        @media screen and (max-width: 768px) {
+            .main-con{
+                flex-direction: column;
+                height: 40vh;
+            }
+            .sponsors{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
     </style>
 </head>
 <body>
