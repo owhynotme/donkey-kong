@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
 
   <style>
     body {
@@ -100,28 +101,37 @@
 
     /* Media Queries for Mobile Responsiveness */
 
-    @media screen and (max-width: 768px) {
+    /* @media screen and (max-width: 768px) {
       .in-cons {
-        width: 50%; /* Adjust width for two columns on mobile */
+        width: 50%; 
         height: 120vh;
       }
-    }
+    } */
 
     @media screen and (max-width: 480px) {
       .in-cons {
-        width: 95%; /* One column for very small screens */
+        width: 95%; 
       }
       .content {
-        margin-left: 5%; /* Adjust margin for smaller screens */
+        margin-left: 5%; 
       }
 
     }
-    @media screen and (min-width: 992px) {
+    
+    /* Styles for laptops (1024px to 1440px) */
+    @media only screen and (min-width: 1024px) and (max-width: 1439px) {
       .con-sec{
-        height: 120vh;
+        height: 100vh;
+        /* background-color: white; */
       }
     }
 
+    /* Styles for desktops (1441px and up) */
+    /* @media only screen and (min-width: 1440px) {
+      .con-sec{
+        height: 100vh;
+      }
+    } */
 
   </style>
 </head>
