@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs Example</title>
+    <style>
+        /* Style the tab */
+        body{
+            background-color: black;
+            color: white;
+        }
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #fff;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+        h3{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Tabs Example</h2>
+<p>Click on the buttons inside the tabbed menu to switch between content.</p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'Tab1')">Tab 1</button>
+  <button class="tablinks" onclick="openTab(event, 'Tab2')">Tab 2</button>
+  <button class="tablinks" onclick="openTab(event, 'Tab3')">Tab 3</button>
+</div>
+
+<div id="Tab1" class="tabcontent">
+  <h3>Tab 1</h3>
+  <p>Welcome to Tab 1. Here is some introductory content.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquet magna vel est feugiat, nec aliquet erat dignissim.</p>
+</div>
+
+<div id="Tab2" class="tabcontent">
+  <h3>Tab 2</h3>
+  <p>This is Tab 2. Below is an image and additional content.</p>
+  <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+  <p>Nam volutpat mi nec nibh posuere, a facilisis urna tempus. Integer sagittis libero a erat lacinia, vitae suscipit dolor fermentum.</p>
+</div>
+
+<div id="Tab3" class="tabcontent">
+  <h3>Tab 3</h3>
+  <p>You've switched to Tab 3. Here is a list and more information.</p>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+</div>
+
+<script>
+function openTab(evt, tabName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Display the first tab by default
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementsByClassName("tablinks")[0].click();
+});
+</script>
+
+</body>
+</html>
