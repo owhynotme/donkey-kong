@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            /* background-color: black; */
+            margin: 0;
+            padding: 0;
+            font-family: montserrat;
+            text-transform: uppercase;
+        }
+        .main-div-mob{
+            width: 100vw;
+            /* height: 200vh; */
+            background-color: #060606;
+        }
+        .con-sec{
+            /* height: 25%; */
+            width: 100%;
+            height: 60vh;
+            display: flex;
+            /* justify-content: center;  */
+            align-items: center;
+            flex-direction: column;
+            
+        }
+        .con-img{
+            height: 70%;
+            width: 90%;
+            margin-top: 5%;
+        }
+        .con-img img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 30px;
+        }
+        .content{
+            height: 50%;
+            width: 90%;
+            color: white;
+        }
+        .content h3 {
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-size: 36px;
+            font-weight: 900;
+            margin: 5% 0;
+        }
+        .content button {
+            padding: 4% 7%;
+            width: 100%;
+            align-self: center;
+            border-radius: 10px;
+            background-color: white;
+            border: 0px;
+            color: #060606;
+            font-size: 14px;
+            font-weight: 900;
+            font-family: montserrat;
+            cursor: pointer;
+        }
+        @media (min-width: 1024px){
+            .main-div-mob{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-div-mob">
+        <div class="con-sec">
+            <div class="con-img">
+                <img src="https://cdn.shopify.com/s/files/1/0602/0209/0579/files/col1.jpg?v=1719735323" alt="">
+            </div>
+            <div class="content">
+                <h3>T-shirt</h3>
+            <center><a href="https://donkeykong.co.in/collections/t-shirts" target="_blank"><button>VIEW
+                    PRODUCTS</button></a></center>
+            </div>
+        </div>
+        <div class="con-sec">
+            <div class="con-img">
+                <img src="https://cdn.shopify.com/s/files/1/0602/0209/0579/files/col1.jpg?v=1719735323" alt="">
+            </div>
+            <div class="content">
+                <h3>T-shirt</h3>
+            <center><a href="https://donkeykong.co.in/collections/t-shirts" target="_blank"><button>VIEW
+                    PRODUCTS</button></a></center>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
