@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Document</title> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: montserrat;
+            text-transform: uppercase;
+        }
+
+        .main-div {
+            background-color: black;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .con-sec {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 3%;
+            align-items: center;
+            /* flex-direction: column; */
+            /* margin: 0 5%; */
+        }
+
+        .in-cons {
+            height: 65vh;
+            width: 30%;
+            overflow: hidden;
+            border-radius: 30px;
+            position: relative;
+        }
+
+        .content h3 {
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-size: 36px;
+            font-weight: 900;
+        }
+
+        .content {
+            height: 100%;
+            width: 50%;
+            display: flex;
+            position: absolute;
+            bottom: 10%;
+            /* z-index: 99; */
+            flex-direction: column;
+            justify-content: flex-end;
+            margin-left: 5%;
+            gap: 2%;
+            overflow: hidden;
+        }
+
+        .content button {
+            padding: 4% 7%;
+            border-radius: 10px;
+            background-color: #060606;
+            border: 0px;
+            color: white;
+            font-size: 14px;
+            font-weight: 900;
+            font-family: montserrat;
+            cursor: pointer;
+        }
+
+        .in-cons img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            flex-wrap: wrap;
+            transition: transform 0.5s ease;
+        }
+
+        .con1:hover img,
+        .con2:hover img,
+        .con3:hover img {
+            transform: scale(1.05);
+        }
+
+        .line {
+            position: relative;
+            bottom: 0;
+            left: -100%;
+            /* width:%; */
+            height: 2px;
+            /* Adjust the height as needed */
+            background-color: white;
+            transition: transform 0.5s ease-in-out;
+        }
+        .line1{
+            width: 82%;
+        }
+        .line2{
+            width: 90%;
+        }
+        .line3{
+            width: 82.5%;
+        }
+
+        .in-cons:hover .line {
+            transform: translateX(100%);
+        }
+
+        .in-cons:not(:hover) .line {
+            transform: translateX(-100%);
+        }
+        @media (max-width:600px) {
+            .con-sec{
+                display:none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-div">
+        <div class="con-sec">
+            <div class="in-cons con1">
+                <img src="https://cdn.shopify.com/s/files/1/0602/0209/0579/files/col1.jpg?v=1719735323" alt="">
+                <div class="content">
+                    <h3>T-SHIRT</h3>
+                    <div class="line line1"></div>
+                    <a href="https://donkeykong.co.in/collections/t-shirts" target="_blank"><button>VIEW
+                            PRODUCTS</button></a>
+                </div>
+            </div>
+            <div class="in-cons con2">
+                <img src="https://cdn.shopify.com/s/files/1/0602/0209/0579/files/col2.jpg?v=1719735323" alt="">
+                <div class="content">
+                    <h3>Croptop</h3>
+                    <div class="line line2"></div>
+                    <a href="https://donkeykong.co.in/collections/t-shirts" target="_blank"><button>VIEW
+                            PRODUCTS</button></a>
+                </div>
+            </div>
+            <div class="in-cons con3">
+                <img src="https://cdn.shopify.com/s/files/1/0602/0209/0579/files/a75ed1ef5b98ae1e9222b49d6d61dd5d_caad70f2-9430-4967-9db6-d73d851ea21f.jpg?v=1719736793"
+                    alt="">
+                <div class="content">
+                    <h3>Zipties</h3>
+                    <div class="line line3"></div>
+                    <a href="https://donkeykong.co.in/collections/t-shirts" target="_blank"><button>VIEW
+                            PRODUCTS</button></a>
+                </div>
+            </div>
+
+            <!-- <div class="in-cons con2">
+                <div class="content">
+                    <h3>Croptop</h3>
+                    <a href="https://donkeykong.co.in/collections/t-shirts" target="_blank" ><button>VIEW PRODUCTS</button></a>
+                </div>
+            </div>
+            <div class="in-cons con3">
+                <div class="content">
+                    <h3>Zipties</h3>
+                    <a href="https://donkeykong.co.in/collections/t-shirts" target="_blank" ><button>VIEW PRODUCTS</button></a>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+</body>
+
+</html>

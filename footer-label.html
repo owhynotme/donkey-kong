@@ -1,39 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
-        body{
-            background-color: #060606;
-        }
-        .footer-label{
-            height: 10vh;
+        .banner-news{
+            height: 70vh;
             width: 100vw;
+            background: url('https://cdn.shopify.com/s/files/1/0602/0209/0579/files/footer_new2.gif?v=1720085455');
+            background-repeat: no-repeat;
+            background-size: contain;
             display: flex;
-            align-items: center;
-            justify-content: space-between;
+            /* align-items: center; */
+            justify-content: center;
+            position: relative;            
         }
-        img{
-            height: 40%;
+        .banner-news button {
+        padding: 4% 10%;
+        position: relative;
+        left: 140%;
+        bottom: 100%;
+        /* border-radius: 10px; */
+        background-color: #FC82B0;
+        border: 1px solid black;
+        color: black;
+        font-size: 14px;
+        font-weight: 900;
+        font-family: montserrat;
         }
+
+        .terms{
+            position: relative;
+            top: 17%;
+        }
+        .terms a{
+            font-family: montserrat;
+            text-transform: uppercase;
+            font-size: 10px;
+            font-weight: 500;
+            color: black;
+
+        }
+        .terms p{
+            font-family: montserrat;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 10px;
+            margin: 0;
+        }
+
         @media screen and (max-width: 768px) {
-            img{
-                height: 35%;
-                padding: 0 2;
+            .banner-news{
+                height: 17vh;
+            }
+            .banner-news button{
+                font-size: 6px;
+                bottom: 8%;
+            }
+            .banner-news{
+            background: url('https://cdn.shopify.com/s/files/1/0602/0209/0579/files/mob_footer.gif?v=1720085437');
+            background-repeat: no-repeat;
+                        background-size: contain;
+            height:70vh;
+            width:100vw;
             }
         }
     </style>
 </head>
 <body>
-    <div class="footer-label">
-        <img src="https://cdn.shopify.com/s/files/1/0602/0209/0579/files/footer-label.png?v=1719415129" alt="donkeykong">
-        <img src="https://cdn.shopify.com/s/files/1/0602/0209/0579/files/footer-label.png?v=1719415129" alt="donkeykong">
-        <img src="https://cdn.shopify.com/s/files/1/0602/0209/0579/files/footer-label.png?v=1719415129" alt="donkeykong">
-        <img src="https://cdn.shopify.com/s/files/1/0602/0209/0579/files/footer-label.png?v=1719415129" alt="donkeykong">
-        <img src="https://cdn.shopify.com/s/files/1/0602/0209/0579/files/footer-label.png?v=1719415129" alt="donkeykong">
-        <img src="https://cdn.shopify.com/s/files/1/0602/0209/0579/files/footer-label.png?v=1719415129" alt="donkeykong">
-        <img src="https://cdn.shopify.com/s/files/1/0602/0209/0579/files/footer-label.png?v=1719415129" alt="donkeykong">
+    <div class="banner-news">
+        <div class="terms">
+            <a href="https://donkeykong.co.in/pages/privacy-policy">Privacy Policy</a>
+            <a href="https://donkeykong.co.in/pages/terms-of-service">Terms of Service</a>
+            <p>apply</p>
+        </div>
     </div>
+    
 </body>
 </html>
